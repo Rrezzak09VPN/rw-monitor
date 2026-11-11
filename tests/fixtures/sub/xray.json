@@ -1,0 +1,1464 @@
+[
+ {
+  "remarks": "🎲 Автовыбор 🎲",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node01.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node01.vpn-example.org",
+      "publicKey": "MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY",
+      "shortId": "184dc628175eee11",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-2",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node02.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node02.vpn-example.org",
+      "publicKey": "TePsXNjyMtjT0DR0jlwsRV35MAzclHvXcIcmil1q-80",
+      "shortId": "9b89a6299c5f2113",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-3",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node03.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node03.vpn-example.org",
+      "publicKey": "thjPgJ1AQDWI1eIXheihK_zdJvxTVMx5sBtuT7yJgVE",
+      "shortId": "6ec03389a54e21f4",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-4",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node04.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node04.vpn-example.org",
+      "publicKey": "lWaRHIbnb7MZXoJfv5iOwqIoLnh5-W4ZGh2z-KkPjXo",
+      "shortId": "c083937566de9413",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-5",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node05.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node05.vpn-example.org",
+      "publicKey": "3nqrPUA0FUXGd3ZaIXJn67iy8CKwY1rn9H_CeTQx7qk",
+      "shortId": "c6745823ebbb6d24",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-6",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node06.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node06.vpn-example.org",
+      "publicKey": "OvWVbKYGsJKScJ5MMq3UEzaK1VdmXs3ytDpifdRCVvE",
+      "shortId": "42a447c6a5cc7245",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-7",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node07.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node07.vpn-example.org",
+      "publicKey": "Az7dq59OzZxIvIbIwqldViQj9IxUhUHIVV3J-sjiAPU",
+      "shortId": "14cc57f66c15fb6e",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-8",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node09.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node09.vpn-example.org",
+      "publicKey": "-Gs9U8ugJ8N6WRNbBKztwYlsuBFAbnz2aXH6WwQJomM",
+      "shortId": "aa7af54d42e98538",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-9",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node11.vpn-example.org",
+      "publicKey": "Q0Z2lOgDyZPagJDT5qOeBAgbaigiDccaY4N5bEwdK9U",
+      "shortId": "4f5f8761379d49a7",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-10",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node13.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node13.vpn-example.org",
+      "publicKey": "3az-QEeU2tjaq8bKJ3inVdPyRz67ILx6OX5Ae61qkz0",
+      "shortId": "acd591c2770045b2",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-11",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node14.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node14.vpn-example.org",
+      "publicKey": "6Xe_nEHfvoagx-USu86-CTrvQojqoLty9pPwRQcwdDQ",
+      "shortId": "6ec4095fc82c4ba4",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-12",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node15.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node15.vpn-example.org",
+      "publicKey": "gTuhmuYN9Abpx6bqr3xNY0mZeoheOgyKFSFY0rDmioI",
+      "shortId": "72fbcab4be43d814",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "proxy-13",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node12.vpn-example.org",
+      "publicKey": "3a1KSHw2jj3jfxy7yfCfTnt8r90KW8lyogeu0oAeb4o",
+      "shortId": "f4269d0ca65403d5",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom",
+    "streamSettings": {
+     "sockopt": {
+      "domainStrategy": "ForceIPv4"
+     }
+    }
+   },
+   {
+    "tag": "dns-out",
+    "protocol": "dns",
+    "settings": {
+     "rules": [
+      {
+       "qType": "28,64,65",
+       "rCode": 5,
+       "action": "return"
+      },
+      {
+       "qType": "1",
+       "action": "hijack",
+       "domain": [
+        "geosite:category-ru",
+        "geosite:private",
+        "regexp:\\.ru$",
+        "regexp:\\.su$",
+        "regexp:\\.xn--p1ai$"
+       ]
+      },
+      {
+       "action": "direct"
+      }
+     ],
+     "rewritePort": 53,
+     "rewriteAddress": "8.8.8.8",
+     "rewriteNetwork": "udp"
+    },
+    "streamSettings": {
+     "sockopt": {
+      "dialerProxy": "proxy"
+     }
+    }
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole",
+    "settings": {
+     "response": {
+      "type": "http"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "balancers": [
+    {
+     "tag": "balancer",
+     "selector": [
+      "proxy-"
+     ],
+     "strategy": {
+      "type": "leastLoad",
+      "settings": {
+       "maxRTT": "2s",
+       "expected": 2,
+       "baselines": [
+        "2s"
+       ],
+       "tolerance": 0.05
+      }
+     },
+     "fallbackTag": "proxy"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "3s",
+    "interval": "1m",
+    "sampling": 10,
+    "destination": "https://connectivitycheck.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy"
+   ]
+  }
+ },
+ {
+  "remarks": "🇩🇪  Германия ",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node01.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node01.vpn-example.org",
+      "publicKey": "MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY",
+      "shortId": "184dc628175eee11",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇩🇪  └─ Германия резерв",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node02.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node02.vpn-example.org",
+      "publicKey": "TePsXNjyMtjT0DR0jlwsRV35MAzclHvXcIcmil1q-80",
+      "shortId": "9b89a6299c5f2113",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇫🇷 Франция",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node03.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node03.vpn-example.org",
+      "publicKey": "thjPgJ1AQDWI1eIXheihK_zdJvxTVMx5sBtuT7yJgVE",
+      "shortId": "6ec03389a54e21f4",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇮🇹 Италия",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node04.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node04.vpn-example.org",
+      "publicKey": "lWaRHIbnb7MZXoJfv5iOwqIoLnh5-W4ZGh2z-KkPjXo",
+      "shortId": "c083937566de9413",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇪🇸 Испания",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node05.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node05.vpn-example.org",
+      "publicKey": "3nqrPUA0FUXGd3ZaIXJn67iy8CKwY1rn9H_CeTQx7qk",
+      "shortId": "c6745823ebbb6d24",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇦🇹 Австрия",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node06.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node06.vpn-example.org",
+      "publicKey": "OvWVbKYGsJKScJ5MMq3UEzaK1VdmXs3ytDpifdRCVvE",
+      "shortId": "42a447c6a5cc7245",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇧🇪  Бельгия  Main",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node07.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node07.vpn-example.org",
+      "publicKey": "Az7dq59OzZxIvIbIwqldViQj9IxUhUHIVV3J-sjiAPU",
+      "shortId": "14cc57f66c15fb6e",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇧🇪 └─   Бельгия резерв",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node08.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node08.vpn-example.org",
+      "publicKey": "8AtU8NZ_-9wQ_L7lhzXleA_7Yxfn5XCa8pvCpPYvmuo",
+      "shortId": "cfa67eb35ac69e57",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇨🇦  Канада",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node09.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node09.vpn-example.org",
+      "publicKey": "-Gs9U8ugJ8N6WRNbBKztwYlsuBFAbnz2aXH6WwQJomM",
+      "shortId": "aa7af54d42e98538",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇨🇦   └─  Канада резерв",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node10.vpn-example.org",
+      "publicKey": "FejcLnJqoOiIGwK1mSuIH_VOXsEcH8QpgyOORw44qkU",
+      "shortId": "131a5aac1ec75cd3",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇳🇴  Норвегия",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node11.vpn-example.org",
+      "publicKey": "Q0Z2lOgDyZPagJDT5qOeBAgbaigiDccaY4N5bEwdK9U",
+      "shortId": "4f5f8761379d49a7",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇳🇴  └─  Норвегия резерв",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node12.vpn-example.org",
+      "publicKey": "3a1KSHw2jj3jfxy7yfCfTnt8r90KW8lyogeu0oAeb4o",
+      "shortId": "f4269d0ca65403d5",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇩🇰 Дания",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node13.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node13.vpn-example.org",
+      "publicKey": "3az-QEeU2tjaq8bKJ3inVdPyRz67ILx6OX5Ae61qkz0",
+      "shortId": "acd591c2770045b2",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇨🇭  Швейцария",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node14.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node14.vpn-example.org",
+      "publicKey": "6Xe_nEHfvoagx-USu86-CTrvQojqoLty9pPwRQcwdDQ",
+      "shortId": "6ec4095fc82c4ba4",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ },
+ {
+  "remarks": "🇰🇷 Корея",
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node15.vpn-example.org",
+       "port": 443,
+       "users": [
+        {
+         "id": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+         "encryption": "none",
+         "flow": "xtls-rprx-vision"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "tcpSettings": {},
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "node15.vpn-example.org",
+      "publicKey": "gTuhmuYN9Abpx6bqr3xNY0mZeoheOgyKFSFY0rDmioI",
+      "shortId": "72fbcab4be43d814",
+      "fingerprint": "firefox"
+     },
+     "finalmask": {
+      "tcp": [
+       {
+        "type": "fragment",
+        "settings": {
+         "length": "10-20",
+         "packets": "1-3",
+         "interval": "10-20"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "tag": "direct",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "block",
+    "protocol": "blackhole"
+   }
+  ]
+ }
+]

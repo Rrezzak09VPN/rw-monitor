@@ -1,0 +1,261 @@
+proxies:
+- name: 🎲 Автовыбор 🎲
+  type: vless
+  server: node01.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node01.vpn-example.org
+  reality-opts:
+    public-key: MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY
+    short-id: 184dc628175eee11
+  client-fingerprint: firefox
+- name: '🇩🇪  Германия '
+  type: vless
+  server: node01.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node01.vpn-example.org
+  reality-opts:
+    public-key: MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY
+    short-id: 184dc628175eee11
+  client-fingerprint: firefox
+- name: 🇩🇪  └─ Германия резерв
+  type: vless
+  server: node02.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node02.vpn-example.org
+  reality-opts:
+    public-key: TePsXNjyMtjT0DR0jlwsRV35MAzclHvXcIcmil1q-80
+    short-id: 9b89a6299c5f2113
+  client-fingerprint: firefox
+- name: 🇫🇷 Франция
+  type: vless
+  server: node03.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node03.vpn-example.org
+  reality-opts:
+    public-key: thjPgJ1AQDWI1eIXheihK_zdJvxTVMx5sBtuT7yJgVE
+    short-id: 6ec03389a54e21f4
+  client-fingerprint: firefox
+- name: 🇮🇹 Италия
+  type: vless
+  server: node04.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node04.vpn-example.org
+  reality-opts:
+    public-key: lWaRHIbnb7MZXoJfv5iOwqIoLnh5-W4ZGh2z-KkPjXo
+    short-id: c083937566de9413
+  client-fingerprint: firefox
+- name: 🇪🇸 Испания
+  type: vless
+  server: node05.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node05.vpn-example.org
+  reality-opts:
+    public-key: 3nqrPUA0FUXGd3ZaIXJn67iy8CKwY1rn9H_CeTQx7qk
+    short-id: c6745823ebbb6d24
+  client-fingerprint: firefox
+- name: 🇦🇹 Австрия
+  type: vless
+  server: node06.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node06.vpn-example.org
+  reality-opts:
+    public-key: OvWVbKYGsJKScJ5MMq3UEzaK1VdmXs3ytDpifdRCVvE
+    short-id: 42a447c6a5cc7245
+  client-fingerprint: firefox
+- name: 🇧🇪  Бельгия  Main
+  type: vless
+  server: node07.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node07.vpn-example.org
+  reality-opts:
+    public-key: Az7dq59OzZxIvIbIwqldViQj9IxUhUHIVV3J-sjiAPU
+    short-id: 14cc57f66c15fb6e
+  client-fingerprint: firefox
+- name: 🇧🇪 └─   Бельгия резерв
+  type: vless
+  server: node08.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node08.vpn-example.org
+  reality-opts:
+    public-key: 8AtU8NZ_-9wQ_L7lhzXleA_7Yxfn5XCa8pvCpPYvmuo
+    short-id: cfa67eb35ac69e57
+  client-fingerprint: firefox
+- name: 🇨🇦  Канада
+  type: vless
+  server: node09.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node09.vpn-example.org
+  reality-opts:
+    public-key: -Gs9U8ugJ8N6WRNbBKztwYlsuBFAbnz2aXH6WwQJomM
+    short-id: aa7af54d42e98538
+  client-fingerprint: firefox
+- name: 🇨🇦   └─  Канада резерв
+  type: vless
+  server: node10.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node10.vpn-example.org
+  reality-opts:
+    public-key: FejcLnJqoOiIGwK1mSuIH_VOXsEcH8QpgyOORw44qkU
+    short-id: 131a5aac1ec75cd3
+  client-fingerprint: firefox
+- name: 🇳🇴  Норвегия
+  type: vless
+  server: node11.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node11.vpn-example.org
+  reality-opts:
+    public-key: Q0Z2lOgDyZPagJDT5qOeBAgbaigiDccaY4N5bEwdK9U
+    short-id: 4f5f8761379d49a7
+  client-fingerprint: firefox
+- name: 🇳🇴  └─  Норвегия резерв
+  type: vless
+  server: node12.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node12.vpn-example.org
+  reality-opts:
+    public-key: 3a1KSHw2jj3jfxy7yfCfTnt8r90KW8lyogeu0oAeb4o
+    short-id: f4269d0ca65403d5
+  client-fingerprint: firefox
+- name: 🇩🇰 Дания
+  type: vless
+  server: node13.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node13.vpn-example.org
+  reality-opts:
+    public-key: 3az-QEeU2tjaq8bKJ3inVdPyRz67ILx6OX5Ae61qkz0
+    short-id: acd591c2770045b2
+  client-fingerprint: firefox
+- name: 🇨🇭  Швейцария
+  type: vless
+  server: node14.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node14.vpn-example.org
+  reality-opts:
+    public-key: 6Xe_nEHfvoagx-USu86-CTrvQojqoLty9pPwRQcwdDQ
+    short-id: 6ec4095fc82c4ba4
+  client-fingerprint: firefox
+- name: 🇰🇷 Корея
+  type: vless
+  server: node15.vpn-example.org
+  port: 443
+  network: tcp
+  udp: true
+  uuid: 5d2f7c1e-3b6a-4c8d-9e0f-000000000001
+  packet-encoding: xudp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node15.vpn-example.org
+  reality-opts:
+    public-key: gTuhmuYN9Abpx6bqr3xNY0mZeoheOgyKFSFY0rDmioI
+    short-id: 72fbcab4be43d814
+  client-fingerprint: firefox
+proxy-groups:
+- name: → Remnawave
+  type: select
+  proxies:
+  - 🎲 Автовыбор 🎲
+  - '🇩🇪  Германия '
+  - 🇩🇪  └─ Германия резерв
+  - 🇫🇷 Франция
+  - 🇮🇹 Италия
+  - 🇪🇸 Испания
+  - 🇦🇹 Австрия
+  - 🇧🇪  Бельгия  Main
+  - 🇧🇪 └─   Бельгия резерв
+  - 🇨🇦  Канада
+  - 🇨🇦   └─  Канада резерв
+  - 🇳🇴  Норвегия
+  - 🇳🇴  └─  Норвегия резерв
+  - 🇩🇰 Дания
+  - 🇨🇭  Швейцария
+  - 🇰🇷 Корея

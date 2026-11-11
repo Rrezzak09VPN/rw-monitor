@@ -1,0 +1,367 @@
+{
+ "outbounds": [
+  {
+   "tag": "→ Remnawave",
+   "type": "selector",
+   "outbounds": [
+    "🎲 Автовыбор 🎲",
+    "🇩🇪  Германия ",
+    "🇩🇪  └─ Германия резерв",
+    "🇫🇷 Франция",
+    "🇮🇹 Италия",
+    "🇪🇸 Испания",
+    "🇦🇹 Австрия",
+    "🇧🇪  Бельгия  Main",
+    "🇧🇪 └─   Бельгия резерв",
+    "🇨🇦  Канада",
+    "🇨🇦   └─  Канада резерв",
+    "🇳🇴  Норвегия",
+    "🇳🇴  └─  Норвегия резерв",
+    "🇩🇰 Дания",
+    "🇨🇭  Швейцария",
+    "🇰🇷 Корея"
+   ],
+   "interrupt_exist_connections": true
+  },
+  {
+   "tag": "direct",
+   "type": "direct"
+  },
+  {
+   "type": "vless",
+   "tag": "🎲 Автовыбор 🎲",
+   "server": "node01.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY",
+     "short_id": "184dc628175eee11"
+    },
+    "server_name": "node01.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇩🇪  Германия ",
+   "server": "node01.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "MEGxlUAOSONaVzOFIuJxiYkkdyRi-q39ytmIE-TWzXY",
+     "short_id": "184dc628175eee11"
+    },
+    "server_name": "node01.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇩🇪  └─ Германия резерв",
+   "server": "node02.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "TePsXNjyMtjT0DR0jlwsRV35MAzclHvXcIcmil1q-80",
+     "short_id": "9b89a6299c5f2113"
+    },
+    "server_name": "node02.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇫🇷 Франция",
+   "server": "node03.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "thjPgJ1AQDWI1eIXheihK_zdJvxTVMx5sBtuT7yJgVE",
+     "short_id": "6ec03389a54e21f4"
+    },
+    "server_name": "node03.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇮🇹 Италия",
+   "server": "node04.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "lWaRHIbnb7MZXoJfv5iOwqIoLnh5-W4ZGh2z-KkPjXo",
+     "short_id": "c083937566de9413"
+    },
+    "server_name": "node04.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇪🇸 Испания",
+   "server": "node05.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "3nqrPUA0FUXGd3ZaIXJn67iy8CKwY1rn9H_CeTQx7qk",
+     "short_id": "c6745823ebbb6d24"
+    },
+    "server_name": "node05.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇦🇹 Австрия",
+   "server": "node06.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "OvWVbKYGsJKScJ5MMq3UEzaK1VdmXs3ytDpifdRCVvE",
+     "short_id": "42a447c6a5cc7245"
+    },
+    "server_name": "node06.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇧🇪  Бельгия  Main",
+   "server": "node07.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "Az7dq59OzZxIvIbIwqldViQj9IxUhUHIVV3J-sjiAPU",
+     "short_id": "14cc57f66c15fb6e"
+    },
+    "server_name": "node07.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇧🇪 └─   Бельгия резерв",
+   "server": "node08.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "8AtU8NZ_-9wQ_L7lhzXleA_7Yxfn5XCa8pvCpPYvmuo",
+     "short_id": "cfa67eb35ac69e57"
+    },
+    "server_name": "node08.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇨🇦  Канада",
+   "server": "node09.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "-Gs9U8ugJ8N6WRNbBKztwYlsuBFAbnz2aXH6WwQJomM",
+     "short_id": "aa7af54d42e98538"
+    },
+    "server_name": "node09.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇨🇦   └─  Канада резерв",
+   "server": "node10.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "FejcLnJqoOiIGwK1mSuIH_VOXsEcH8QpgyOORw44qkU",
+     "short_id": "131a5aac1ec75cd3"
+    },
+    "server_name": "node10.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇳🇴  Норвегия",
+   "server": "node11.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "Q0Z2lOgDyZPagJDT5qOeBAgbaigiDccaY4N5bEwdK9U",
+     "short_id": "4f5f8761379d49a7"
+    },
+    "server_name": "node11.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇳🇴  └─  Норвегия резерв",
+   "server": "node12.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "3a1KSHw2jj3jfxy7yfCfTnt8r90KW8lyogeu0oAeb4o",
+     "short_id": "f4269d0ca65403d5"
+    },
+    "server_name": "node12.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇩🇰 Дания",
+   "server": "node13.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "3az-QEeU2tjaq8bKJ3inVdPyRz67ILx6OX5Ae61qkz0",
+     "short_id": "acd591c2770045b2"
+    },
+    "server_name": "node13.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇨🇭  Швейцария",
+   "server": "node14.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "6Xe_nEHfvoagx-USu86-CTrvQojqoLty9pPwRQcwdDQ",
+     "short_id": "6ec4095fc82c4ba4"
+    },
+    "server_name": "node14.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  },
+  {
+   "type": "vless",
+   "tag": "🇰🇷 Корея",
+   "server": "node15.vpn-example.org",
+   "server_port": 443,
+   "uuid": "5d2f7c1e-3b6a-4c8d-9e0f-000000000001",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "reality": {
+     "enabled": true,
+     "public_key": "gTuhmuYN9Abpx6bqr3xNY0mZeoheOgyKFSFY0rDmioI",
+     "short_id": "72fbcab4be43d814"
+    },
+    "server_name": "node15.vpn-example.org",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   }
+  }
+ ]
+}

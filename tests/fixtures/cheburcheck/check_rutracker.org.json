@@ -1,0 +1,99 @@
+{
+ "id": "fixture-probe-id",
+ "target": "rutracker.org",
+ "target_type": "Домен",
+ "blocked": true,
+ "rkn_domain": "rutracker.org",
+ "ips": [
+  "104.21.32.39",
+  "172.67.182.196",
+  "2606:4700:3037::ac43:b6c4",
+  "2606:4700:3035::6815:2027"
+ ],
+ "blocked_subnets": [],
+ "cdn_providers": {
+  "cloudflare": [
+   {
+    "provider": "cloudflare",
+    "cidr": "104.21.0.0/17",
+    "region": null
+   },
+   {
+    "provider": "cloudflare",
+    "cidr": "172.67.128.0/17",
+    "region": null
+   },
+   {
+    "provider": "cloudflare",
+    "cidr": "2606:4700:3000::/42",
+    "region": null
+   }
+  ]
+ },
+ "geo": {
+  "asn": "AS13335",
+  "country_code": null,
+  "organisation": "Cloudflare, Inc.",
+  "city_geo_name_id": null,
+  "location": "-"
+ },
+ "reverse_lookup": [],
+ "complaints": [
+  {
+   "date": "2026-10-28",
+   "count": 1
+  },
+  {
+   "date": "2026-10-29",
+   "count": 0
+  },
+  {
+   "date": "2026-10-30",
+   "count": 0
+  },
+  {
+   "date": "2026-10-31",
+   "count": 1
+  },
+  {
+   "date": "2026-11-01",
+   "count": 2
+  },
+  {
+   "date": "2026-11-02",
+   "count": 1
+  },
+  {
+   "date": "2026-11-03",
+   "count": 0
+  },
+  {
+   "date": "2026-11-04",
+   "count": 0
+  },
+  {
+   "date": "2026-11-05",
+   "count": 2
+  },
+  {
+   "date": "2026-11-06",
+   "count": 3
+  },
+  {
+   "date": "2026-11-07",
+   "count": 0
+  },
+  {
+   "date": "2026-11-08",
+   "count": 0
+  },
+  {
+   "date": "2026-11-09",
+   "count": 0
+  },
+  {
+   "date": "2026-11-10",
+   "count": 0
+  }
+ ]
+}
