@@ -534,6 +534,7 @@ show_journal() {
 
 start_service() {
     SERVICE_STATE=not-started
+    TELEGRAM_STATE=ok
     if [[ "${RWMON_NO_START:-}" == 1 ]]; then
         warn "служба не запущена (RWMON_NO_START=1)"
         SWITCHED=no
@@ -552,8 +553,10 @@ start_service() {
     report="$(rwmon_cli selftest 2>&1 || true)"
     printf '%s\n' "$report" | sed 's/^/    /'
     if [[ "$report" == *"Telegram Bot API"*"Unauthorized"* ]]; then
+        TELEGRAM_STATE=rejected
         warn "Telegram отклонил токен бота. Исправьте TELEGRAM_BOT_TOKEN в $ENV_FILE и перезапустите службу."
     elif [[ "$report" == *"[FAIL] Telegram Bot API"* ]]; then
+        TELEGRAM_STATE=unreachable
         if [[ -n "$(get_env_value TELEGRAM_PROXY_URL)" ]]; then
             warn "Bot API через заданный прокси недоступен. Проверьте TELEGRAM_PROXY_URL в $ENV_FILE и перезапустите службу."
         else
@@ -622,14 +625,39 @@ summary() {
 SUMMARY
     case "$SERVICE_STATE" in
         active)
-            cat <<SUMMARY
-    Служба:        работает, автозапуск включён
+            printf '    Служба:        работает, автозапуск включён\n\n'
+            case "$TELEGRAM_STATE" in
+                rejected)
+                    cat <<SUMMARY
+    ВНИМАНИЕ: Telegram отклонил токен бота — бот не сможет вам отвечать.
+    Что дальше:
+      1. sudo nano $ENV_FILE        (исправьте TELEGRAM_BOT_TOKEN)
+      2. sudo systemctl restart $SERVICE
+      3. sudo rwmon selftest               (строка «Telegram Bot API» должна стать OK)
+      4. Откройте чат с ботом, отправьте /start и пришлите ссылку на подписку.
 
+SUMMARY
+                    ;;
+                unreachable)
+                    cat <<SUMMARY
+    ВНИМАНИЕ: Bot API сейчас недоступен — уведомления будут ждать в очереди.
+    Что дальше:
+      1. sudo nano $ENV_FILE        (проверьте TELEGRAM_PROXY_URL)
+      2. sudo systemctl restart $SERVICE
+      3. sudo rwmon selftest               (строка «Telegram Bot API» должна стать OK)
+      4. Откройте чат с ботом, отправьте /start и пришлите ссылку на подписку.
+
+SUMMARY
+                    ;;
+                *)
+                    cat <<SUMMARY
     Что дальше:
       1. Откройте чат с ботом в Telegram и отправьте /start.
       2. Пришлите боту ссылку на подписку Remnawave.
 
 SUMMARY
+                    ;;
+            esac
             ;;
         needs-config)
             cat <<SUMMARY
