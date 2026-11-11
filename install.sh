@@ -255,6 +255,7 @@ build_release() {
     info "установка зависимостей (около минуты)…"
     "$NEW_RELEASE/venv/bin/pip" install --quiet --disable-pip-version-check -r "$NEW_RELEASE/src/requirements.txt"
     "$NEW_RELEASE/venv/bin/pip" install --quiet --disable-pip-version-check --no-deps "$NEW_RELEASE/src"
+    rm -rf "$NEW_RELEASE/src/build" "$NEW_RELEASE/src/"*.egg-info   # следы сборки пакета
     local installed
     installed="$("$NEW_RELEASE/venv/bin/rwmon" --version)"
     ok "$installed → $NEW_RELEASE"
