@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rw-monitor"
+version = "1.0.0b1"
+description = "Telegram-бот мониторинга доступности серверов из подписок Remnawave из российской сети"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Rrezzak09VPN" }]
+keywords = ["remnawave", "xray", "vless", "monitoring", "telegram-bot", "dpi"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: No Input/Output (Daemon)",
+    "Intended Audience :: System Administrators",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Networking :: Monitoring",
+]
+dependencies = [
+    "aiogram==3.31.0",
+    "aiohttp>=3.14,<4",
+    "aiohttp-socks==0.12.0",
+    "aiosqlite==0.22.1",
+    "dnspython==2.9.2",
+    "PyYAML==6.0.3",
+    "pydantic-settings==2.16.2",
+    "cryptography>=46",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/Rrezzak09VPN/rw-monitor"
+Repository = "https://github.com/Rrezzak09VPN/rw-monitor"
+Issues = "https://github.com/Rrezzak09VPN/rw-monitor/issues"
+Changelog = "https://github.com/Rrezzak09VPN/rw-monitor/blob/beta/CHANGELOG.md"
+
+[project.scripts]
+rwmon = "rwmon.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["rwmon*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+markers = ["network: needs real internet access (deselect with -m \"not network\")"]
+
+[tool.ruff]
+line-length = 125
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["F", "E", "B", "W", "I"]
+ignore = ["E501", "E702", "B008"]
