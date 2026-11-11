@@ -1,0 +1,56 @@
+[Unit]
+Description=rw-monitor: мониторинг серверов из подписок Remnawave
+Documentation=https://github.com/Rrezzak09VPN/rw-monitor
+After=network-online.target nss-lookup.target
+Wants=network-online.target
+# Не сдаваться после серии быстрых падений (например, пока сеть ещё не поднялась)
+StartLimitIntervalSec=0
+
+[Service]
+Type=notify
+NotifyAccess=main
+User=rwmon
+Group=rwmon
+WorkingDirectory=/var/lib/rw-monitor
+Environment=RWMON_ENV_FILE=/etc/rw-monitor/rwmon.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/rw-monitor/current/venv/bin/rwmon run
+
+# Автозапуск и самовосстановление
+Restart=always
+RestartSec=5
+# Код 2 = ошибка в файле конфигурации: перезапуск не поможет, нужен человек
+RestartPreventExitStatus=2
+# Сервис сам сообщает systemd, что цикл мониторинга жив; при зависании — перезапуск
+WatchdogSec=180
+TimeoutStartSec=90
+TimeoutStopSec=30
+KillMode=control-group
+
+# Изоляция: сервису нужны только сеть и собственный каталог данных
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/rw-monitor
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX AF_NETLINK
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+UMask=0077
+LimitNOFILE=65536
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target
